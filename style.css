@@ -1,0 +1,105 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1594671581654-cc7ed83167bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2luZyUyMHdhdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: round;
+
+    
+
+}
+.container{
+    display: flexbox;
+    width: 400px;
+    padding: 50px 40px;
+    background-color: rgb(62, 204, 240);
+    border-radius: 6px;
+    background-image: url("https://thumbs.dreamstime.com/b/animated-bubbles-clear-blue-water-splash-white-background-185241888.jpg");
+
+    box-shadow: 0 20px 65px rgb(10, 44, 94);
+    position: absolute;
+    top: 30%;
+    left: 32%; 
+    text-align: center;  
+}
+.container:after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: aliceblue;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+
+
+#quote{
+    color: rgb(45, 4, 58);
+    line-height: 2;
+    font-size: 17px;
+    font-weight: 400;
+}
+h1{
+    color: rgb(41, 11, 68);
+    font-family: "roboto";
+    background: linear-gradient(90deg, #ff0000, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+       
+      
+}
+#quote:before{
+    content: '\201c';
+    top: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(52, 19, 114);
+    font-family:  Times, serif;
+
+}
+
+#author{
+    color: rgb(41, 16, 65);
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    float: right;
+}
+#btn{
+    width: 300px;
+    background-image: url("https://images.pexels.com/photos/262212/pexels-photo-262212.jpeg?auto=compress&cs=tinysrgb&w=400");
+    background-color: aliceblue;
+    padding: 15px 45px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    font-weight: 1000;
+    color: rgb(35, 102, 146);
+    cursor: pointer;
+    border: 2px solid rgb(18, 188, 211);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+#btn:hover{
+    color: #f70dc4;
+}
